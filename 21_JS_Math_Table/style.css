@@ -1,0 +1,6 @@
+.badge-secondary{
+    background: linear-gradient(45deg,black,purple) ;
+}
+.text-sencondary{
+    color:linear-gradient(45deg rgb(5, 1, 5) black );
+}

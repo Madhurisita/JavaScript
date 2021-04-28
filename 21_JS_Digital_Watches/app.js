@@ -7,7 +7,7 @@ let indianWatch = () => {
     document.querySelector(selectors ='#indian-time').innerText = currentTime;
 
 };
-//indianWatch();
+//indianWatch();  1000 milisec == 1 sec so for  it keep calling this fun and keep executing the date.
 setInterval(indianWatch,timeout = 1000);
 
 //usa Watch
