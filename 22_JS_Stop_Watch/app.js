@@ -40,8 +40,7 @@ stopButton.addEventListener(type='click',listener = function(){
 
 
 
-
- //click on reset button
+//click on reset button
 
  let resetButton = document.querySelector(selectors='#reset-btn');
  resetButton.addEventListener(type='click',listener=function(){
