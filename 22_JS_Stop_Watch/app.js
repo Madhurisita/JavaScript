@@ -5,13 +5,13 @@
  let interval = 0;
  let timerRunning = false;
 
- //starTimer
+ //start Timer
  let startTimer = () => {
     count++;
     
-    minutes = Math.floor(x=(count/100)/60);
-    seconds = Math.floor(x=(count/100) - (minutes*60));
-    miliSeconds = Math.floor(x= count - (second * 100) - (minutes * 6000));
+    minutes = Math.floor((count/100)/60);
+    seconds = Math.floor((count/100) - (minutes * 60));
+    miliSeconds = Math.floor(count - (seconds * 100) - (minutes * 6000));
 
     document.querySelector(selectors='#minutes').innerText =leadingZero(minutes);
     document.querySelector(selectors='#seconds').innerText = leadingZero(seconds);
@@ -19,7 +19,7 @@
  };
  
  //click on start button
- let startButton = document.querySelector(selecotors='#start-btn');
+ let startButton = document.querySelector(selecotors ='#start-btn');
  startButton.addEventListener(type ='click',listener = function() {
     if(!timerRunning){
   interval = setInterval(startTimer,timeout = 10); //start the timer
@@ -43,8 +43,8 @@ stopButton.addEventListener(type='click',listener = function(){
 //click on reset button
 
  let resetButton = document.querySelector(selectors='#reset-btn');
- resetButton.addEventListener(type='click',listener=function(){
-     clesarIntyerval(interval); //stop the timer
+ resetButton.addEventListener(type='click',listener = function(){
+     clearInterval(interval); //stop the timer
      
     count = 0;
     minutes =0;
@@ -59,7 +59,7 @@ stopButton.addEventListener(type='click',listener = function(){
 
  //leading zero
 
- let leadingZero =(time)=>{
+ let leadingZero = (time) => {
      if(time < 9){
      return "0" + time;
      }
