@@ -37,9 +37,6 @@ stopButton.addEventListener(type='click',listener = function(){
    clearInterval(interval);//stop the timer  
 });
 
-
-
-
 //click on reset button
 
  let resetButton = document.querySelector(selectors='#reset-btn');
